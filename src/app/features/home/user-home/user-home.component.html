@@ -1,0 +1,38 @@
+<div class="user-home">
+    <!-- Navbar 
+    <app-navbar></app-navbar>-->
+  
+    <div class="content-container d-flex">
+      <!-- Sidebar -->
+      <div class="sidebar bg-light">
+        <app-recent-successes></app-recent-successes>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="main-content flex-grow-1">
+        <!-- Slider 1: Random Games -->
+        <div class="slider-container">
+          <app-random-games-slider></app-random-games-slider>
+        </div>
+        
+        <!-- Slider 2: User Games -->
+        <div class="slider-container">
+          <app-user-games-slider></app-user-games-slider>
+        </div>
+  
+        <!-- Bottom Section -->
+        <div class="bottom-section d-flex justify-content-between">
+          <div class="box">
+            <app-user-stats></app-user-stats>
+          </div>
+          <div class="box">
+            <app-user-stats></app-user-stats>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    
+  </div>
+  
