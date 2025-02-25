@@ -2,17 +2,28 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './shared/components/auth/login/login.component';
 import { RegisterComponent } from './shared/components/auth/register/register.component';
-import { AppComponent } from './app.component';  // Assure-toi que AppComponent est importé
+import { UserHomeComponent } from './features/home/user-home/user-home.component';
+import { UserStatsComponent } from './features/home/user-stats/user-stats.component';
+import { UserProfileComponent } from './features/profile/user-profile/user-profile.component';
+import { UserGamesComponent } from './features/my-games/user-games/user-games.component';
+import { AddGamesFormComponent } from './features/add-game/add-games-form/add-games-form.component';
+import { DiscoverGamesComponent } from './features/discover/discover-games/discover-games.component';
+import { AppComponent } from './app.component';
 
-// Définir et exporter les routes
 export const routes: Routes = [
-  //{ path: '', component: AppComponent },  // Affiche le composant principal (AppComponent) au début
+  { path: '', component: AppComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'user-profile', component: UserProfileComponent },
+  { path: 'user-stats', component: UserStatsComponent },
+  { path: 'my-games', component: UserGamesComponent },
+  { path: 'add-games-form', component: AddGamesFormComponent },
+  { path: 'discover-games', component: DiscoverGamesComponent },
+  { path: 'user-home', component: UserHomeComponent }, // ✅ Route vers UserHomeComponent
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],  // Importer le module de routage
-  exports: [RouterModule]  // Exporte le module pour l'utiliser dans d'autres parties de l'application
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

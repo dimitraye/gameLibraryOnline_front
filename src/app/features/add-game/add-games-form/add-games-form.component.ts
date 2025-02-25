@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from "../../../shared/components/navbar/navbar.component";
 
 @Component({
-  selector: 'app-user-stats',
+  selector: 'app-add-games-form',
   standalone: true,
   imports: [NavbarComponent],
-  templateUrl: './user-stats.component.html',
-  styleUrl: './user-stats.component.scss'
+  templateUrl: './add-games-form.component.html',
+  styleUrl: './add-games-form.component.scss'
 })
-export class UserStatsComponent {
+export class AddGamesFormComponent {
 
 }

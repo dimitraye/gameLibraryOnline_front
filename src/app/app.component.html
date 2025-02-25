@@ -1,6 +1,6 @@
 <div class="app">
-  <!-- Header avec Bootstrap Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!--  Header avec Bootstrap Navbar -->
+  <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Game Library Online</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,14 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <button class="btn btn-primary" routerLink="/login">Login</button>
+          <button class="btn btn-primary" (click)="navigateToLogin()">Login</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-secondary" routerLink="/register">Register</button>
+          <button class="btn btn-secondary" (click)="navigateToRegister()">Register</button>
+        </li>
+        <li class="nav-item">
+          
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
+
+  <app-navbar></app-navbar>
 
   <!-- Le contenu principal de la page -->
   <main class="main-content">
@@ -24,7 +29,8 @@
   </main>
 
   <!-- Footer avec Bootstrap -->
-  <footer class="bg-dark text-white text-center p-3 mt-5">
+  <!--<footer class="bg-dark text-white text-center p-3 mt-5">
     <p>&copy; 2025 Mon Application</p>
-  </footer>
+  </footer>-->
+  <app-footer></app-footer>
 </div>

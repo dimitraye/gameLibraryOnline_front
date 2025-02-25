@@ -1,0 +1,87 @@
+.user-home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-grow: 1;
+    padding: 0; /* Enlever la marge par défaut pour éviter l'espacement */
+  }
+  
+  .sidebar {
+    width: 300px; /* Largeur de la sidebar */
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-right: 2px solid black; /* Bordure droite pour mieux visualiser la sidebar */
+    height: 100%; /* La sidebar occupe toute la hauteur */
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 2px solid black; /* Bordure gauche pour mieux visualiser la séparation */
+  }
+  
+  .slider-container {
+    margin-bottom: 20px;
+    border: 1px solid black; /* Bordure pour mieux visualiser le slider */
+  }
+  
+  .bottom-section {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    flex: 1;
+    height: 150px;
+    background-color: #e9ecef;
+    border: 1px solid black; /* Bordure noire pour visualiser les boîtes */
+  }
+  
+  .app-navbar {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid black; /* Bordure en bas pour séparer le header */
+  }
+  
+  .app-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid black; /* Bordure en haut pour séparer le footer */
+  }
+  
+  .app-random-games-slider,
+  .app-user-games-slider {
+    width: 100%;
+  }
+  
+  .app-recent-successes {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid black; /* Bordure pour mieux visualiser */
+  }
+  
+  /* Style spécifique aux sliders */
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid black; /* Bordure pour mieux visualiser */
+  }
+  
